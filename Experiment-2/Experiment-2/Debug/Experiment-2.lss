@@ -1,0 +1,317 @@
+
+Experiment-2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800200  00800200  000001e4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000190  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001e4  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000214  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000048  00000000  00000000  00000254  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000ddc  00000000  00000000  0000029c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000c62  00000000  00000000  00001078  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000003bc  00000000  00000000  00001cda  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000074  00000000  00000000  00002098  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000611  00000000  00000000  0000210c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000047  00000000  00000000  0000271d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000038  00000000  00000000  00002764  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	71 c0       	rjmp	.+226    	; 0xe4 <__ctors_end>
+   2:	00 00       	nop
+   4:	79 c0       	rjmp	.+242    	; 0xf8 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	77 c0       	rjmp	.+238    	; 0xf8 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	75 c0       	rjmp	.+234    	; 0xf8 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	73 c0       	rjmp	.+230    	; 0xf8 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	71 c0       	rjmp	.+226    	; 0xf8 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	6f c0       	rjmp	.+222    	; 0xf8 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	6d c0       	rjmp	.+218    	; 0xf8 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	6b c0       	rjmp	.+214    	; 0xf8 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	69 c0       	rjmp	.+210    	; 0xf8 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	67 c0       	rjmp	.+206    	; 0xf8 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	65 c0       	rjmp	.+202    	; 0xf8 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	63 c0       	rjmp	.+198    	; 0xf8 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	61 c0       	rjmp	.+194    	; 0xf8 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	5f c0       	rjmp	.+190    	; 0xf8 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	5d c0       	rjmp	.+186    	; 0xf8 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	5b c0       	rjmp	.+182    	; 0xf8 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	59 c0       	rjmp	.+178    	; 0xf8 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	57 c0       	rjmp	.+174    	; 0xf8 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	55 c0       	rjmp	.+170    	; 0xf8 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	53 c0       	rjmp	.+166    	; 0xf8 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	51 c0       	rjmp	.+162    	; 0xf8 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	4f c0       	rjmp	.+158    	; 0xf8 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	4d c0       	rjmp	.+154    	; 0xf8 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	4b c0       	rjmp	.+150    	; 0xf8 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	49 c0       	rjmp	.+146    	; 0xf8 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	47 c0       	rjmp	.+142    	; 0xf8 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	45 c0       	rjmp	.+138    	; 0xf8 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	43 c0       	rjmp	.+134    	; 0xf8 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	41 c0       	rjmp	.+130    	; 0xf8 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	3f c0       	rjmp	.+126    	; 0xf8 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	3d c0       	rjmp	.+122    	; 0xf8 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	3b c0       	rjmp	.+118    	; 0xf8 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	39 c0       	rjmp	.+114    	; 0xf8 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	37 c0       	rjmp	.+110    	; 0xf8 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	35 c0       	rjmp	.+106    	; 0xf8 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	33 c0       	rjmp	.+102    	; 0xf8 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	31 c0       	rjmp	.+98     	; 0xf8 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	2f c0       	rjmp	.+94     	; 0xf8 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	2d c0       	rjmp	.+90     	; 0xf8 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	2b c0       	rjmp	.+86     	; 0xf8 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	29 c0       	rjmp	.+82     	; 0xf8 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	27 c0       	rjmp	.+78     	; 0xf8 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	25 c0       	rjmp	.+74     	; 0xf8 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	23 c0       	rjmp	.+70     	; 0xf8 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	21 c0       	rjmp	.+66     	; 0xf8 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	1f c0       	rjmp	.+62     	; 0xf8 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	1d c0       	rjmp	.+58     	; 0xf8 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	1b c0       	rjmp	.+54     	; 0xf8 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	19 c0       	rjmp	.+50     	; 0xf8 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	17 c0       	rjmp	.+46     	; 0xf8 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	15 c0       	rjmp	.+42     	; 0xf8 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	13 c0       	rjmp	.+38     	; 0xf8 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	11 c0       	rjmp	.+34     	; 0xf8 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	0f c0       	rjmp	.+30     	; 0xf8 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	0d c0       	rjmp	.+26     	; 0xf8 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	0b c0       	rjmp	.+22     	; 0xf8 <__bad_interrupt>
+	...
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+  f4:	31 d0       	rcall	.+98     	; 0x158 <main>
+  f6:	4a c0       	rjmp	.+148    	; 0x18c <_exit>
+
+000000f8 <__bad_interrupt>:
+  f8:	83 cf       	rjmp	.-250    	; 0x0 <__vectors>
+
+000000fa <bar_graph_led_pins_config>:
+#include <stdbool.h>
+
+//Bargraph LED Pin Configuration
+void bar_graph_led_pins_config(void)
+{
+	DDRJ |= 0xA2;     // PJ1, PJ5, PJ7 as output
+  fa:	e4 e0       	ldi	r30, 0x04	; 4
+  fc:	f1 e0       	ldi	r31, 0x01	; 1
+  fe:	80 81       	ld	r24, Z
+ 100:	82 6a       	ori	r24, 0xA2	; 162
+ 102:	80 83       	st	Z, r24
+	PORTJ |= 0x02;    // LED2 ON initially (PJ1)
+ 104:	e5 e0       	ldi	r30, 0x05	; 5
+ 106:	f1 e0       	ldi	r31, 0x01	; 1
+ 108:	80 81       	ld	r24, Z
+ 10a:	82 60       	ori	r24, 0x02	; 2
+ 10c:	80 83       	st	Z, r24
+ 10e:	08 95       	ret
+
+00000110 <interrupt_sw_pin_config>:
+}
+
+//Interrupt Switch Configuration (PE7)
+void interrupt_sw_pin_config(void)
+{
+	DDRE &= 0x7F;     // PE7 as input
+ 110:	6f 98       	cbi	0x0d, 7	; 13
+	PORTE |= 0x80;    // Enable internal pull-up
+ 112:	77 9a       	sbi	0x0e, 7	; 14
+ 114:	08 95       	ret
+
+00000116 <interrupt_switch_pressed>:
+}
+
+//Check if Switch Pressed
+bool interrupt_switch_pressed(void)
+{
+	if((PINE & 0x80) == 0)   // Active LOW
+ 116:	8c b1       	in	r24, 0x0c	; 12
+ 118:	80 95       	com	r24
+		return true;
+	else
+		return false;
+}
+ 11a:	88 1f       	adc	r24, r24
+ 11c:	88 27       	eor	r24, r24
+ 11e:	88 1f       	adc	r24, r24
+ 120:	08 95       	ret
+
+00000122 <turn_on_bar_graph_led>:
+
+//Turn ON specific LED
+void turn_on_bar_graph_led(unsigned char led_pin)
+{
+	PORTJ |= (1 << led_pin);
+ 122:	e5 e0       	ldi	r30, 0x05	; 5
+ 124:	f1 e0       	ldi	r31, 0x01	; 1
+ 126:	90 81       	ld	r25, Z
+ 128:	21 e0       	ldi	r18, 0x01	; 1
+ 12a:	30 e0       	ldi	r19, 0x00	; 0
+ 12c:	02 c0       	rjmp	.+4      	; 0x132 <turn_on_bar_graph_led+0x10>
+ 12e:	22 0f       	add	r18, r18
+ 130:	33 1f       	adc	r19, r19
+ 132:	8a 95       	dec	r24
+ 134:	e2 f7       	brpl	.-8      	; 0x12e <turn_on_bar_graph_led+0xc>
+ 136:	29 2b       	or	r18, r25
+ 138:	20 83       	st	Z, r18
+ 13a:	08 95       	ret
+
+0000013c <turn_off_bar_graph_led>:
+}
+
+//Turn OFF specific LED
+void turn_off_bar_graph_led(unsigned char led_pin)
+{
+	PORTJ &= ~(1 << led_pin);
+ 13c:	e5 e0       	ldi	r30, 0x05	; 5
+ 13e:	f1 e0       	ldi	r31, 0x01	; 1
+ 140:	90 81       	ld	r25, Z
+ 142:	21 e0       	ldi	r18, 0x01	; 1
+ 144:	30 e0       	ldi	r19, 0x00	; 0
+ 146:	02 c0       	rjmp	.+4      	; 0x14c <turn_off_bar_graph_led+0x10>
+ 148:	22 0f       	add	r18, r18
+ 14a:	33 1f       	adc	r19, r19
+ 14c:	8a 95       	dec	r24
+ 14e:	e2 f7       	brpl	.-8      	; 0x148 <turn_off_bar_graph_led+0xc>
+ 150:	20 95       	com	r18
+ 152:	29 23       	and	r18, r25
+ 154:	20 83       	st	Z, r18
+ 156:	08 95       	ret
+
+00000158 <main>:
+}
+
+//Main Function (DO NOT MODIFY)
+int main(void)
+{
+	bar_graph_led_pins_config();
+ 158:	d0 df       	rcall	.-96     	; 0xfa <bar_graph_led_pins_config>
+	interrupt_sw_pin_config();
+ 15a:	da df       	rcall	.-76     	; 0x110 <interrupt_sw_pin_config>
+	
+	turn_on_bar_graph_led(5);   // LED6 ON (PJ5)
+ 15c:	85 e0       	ldi	r24, 0x05	; 5
+ 15e:	e1 df       	rcall	.-62     	; 0x122 <turn_on_bar_graph_led>
+
+	while (1)
+	{
+		if (interrupt_switch_pressed())
+ 160:	da df       	rcall	.-76     	; 0x116 <interrupt_switch_pressed>
+ 162:	88 23       	and	r24, r24
+ 164:	71 f0       	breq	.+28     	; 0x182 <main+0x2a>
+		{
+			turn_off_bar_graph_led(1); // LED2 OFF
+ 166:	81 e0       	ldi	r24, 0x01	; 1
+ 168:	e9 df       	rcall	.-46     	; 0x13c <turn_off_bar_graph_led>
+ 16a:	87 e0       	ldi	r24, 0x07	; 7
+			turn_on_bar_graph_led(7);  // LED8 ON
+ 16c:	da df       	rcall	.-76     	; 0x122 <turn_on_bar_graph_led>
+ 16e:	2f ef       	ldi	r18, 0xFF	; 255
+ 170:	8f e3       	ldi	r24, 0x3F	; 63
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 172:	92 e0       	ldi	r25, 0x02	; 2
+ 174:	21 50       	subi	r18, 0x01	; 1
+ 176:	80 40       	sbci	r24, 0x00	; 0
+ 178:	90 40       	sbci	r25, 0x00	; 0
+ 17a:	e1 f7       	brne	.-8      	; 0x174 <main+0x1c>
+ 17c:	00 c0       	rjmp	.+0      	; 0x17e <main+0x26>
+ 17e:	00 00       	nop
+ 180:	ef cf       	rjmp	.-34     	; 0x160 <main+0x8>
+			
+			_delay_ms(50);
+		}
+		else
+		{
+			turn_on_bar_graph_led(1);  // LED2 ON
+ 182:	81 e0       	ldi	r24, 0x01	; 1
+ 184:	ce df       	rcall	.-100    	; 0x122 <turn_on_bar_graph_led>
+ 186:	87 e0       	ldi	r24, 0x07	; 7
+			turn_off_bar_graph_led(7); // LED8 OFF
+ 188:	d9 df       	rcall	.-78     	; 0x13c <turn_off_bar_graph_led>
+ 18a:	ea cf       	rjmp	.-44     	; 0x160 <main+0x8>
+
+0000018c <_exit>:
+ 18c:	f8 94       	cli
+
+0000018e <__stop_program>:
+ 18e:	ff cf       	rjmp	.-2      	; 0x18e <__stop_program>
